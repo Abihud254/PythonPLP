@@ -1,0 +1,9 @@
+filename = input("Enter the filename you want to read (remember to include the filename extension): ")
+
+try:
+    with open(filename, 'r') as file:
+        content = file.read()
+except FileNotFoundError:
+    print("Wueh, hio file haiexist 😂😂")
+except IOError:
+    print("Pole bro, hio file haisomeki.")
